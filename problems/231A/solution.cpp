@@ -1,4 +1,4 @@
-// $ g++ -std=c++11 -o solution solution.cpp
+// $ g++ -std=c++11 -o template template.cpp
 
 #include <iostream>
 #include <string>
@@ -15,16 +15,21 @@ typedef unsigned long int uint32;
 typedef long long int int64;
 typedef unsigned long long int  uint64;
 
-void solve_case(){
+void solve(){
     
 }
 
 /* Main function */
 int main() {
-    int total;
-    scanf("%d", &total);
-    for(int i = 1; i <= total; i++){
-        printf("Case #%d", i);
-        solve_case()
+    int n;
+    cin >> n;
+
+    int total = 0;
+    for(int i = 1; i <= n; i++){
+        int x, y, z;
+        cin >> x >> y >> z;
+
+        if (x+y+z >= 2) total++;
     }
+    cout << total << '\n';
 }
