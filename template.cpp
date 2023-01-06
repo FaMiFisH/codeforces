@@ -7,6 +7,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <algorithm>
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -21,9 +22,9 @@ void solve_case(){
 
 /* Main function */
 int main() {
-    int total;
-    scanf("%d", &total);
-    for(int i = 1; i <= total; i++){
+    int cases;
+    cin >> cases;
+    for(int i = 1; i <= cases; i++){
         printf("Case #%d", i);
         solve_case()
     }
